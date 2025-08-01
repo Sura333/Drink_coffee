@@ -1,4 +1,3 @@
-
 /* CSS Reset */
 * {
   margin: 0;
@@ -6,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Base styles for HTML and Body */
 html, body {
   height: 100%;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
@@ -17,34 +15,29 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Root element for React app */
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Anchor link styling */
 a {
   color: #7c3aed;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-/* Anchor link hover effect */
 a:hover {
   color: #5b21b6;
   text-decoration: underline;
 }
 
-/* Base styles for form elements */
 button, input, select, textarea {
   font-family: inherit;
   font-size: 1rem;
   outline: none;
 }
 
-/* Button styling */
 button {
   cursor: pointer;
   background: #7c3aed;
@@ -55,12 +48,10 @@ button {
   transition: background 0.2s;
 }
 
-/* Button hover effect */
 button:hover {
   background: #5b21b6;
 }
 
-/* Custom scrollbar styling for Webkit browsers */
 ::-webkit-scrollbar {
   width: 8px;
   background: #e5e7eb;
@@ -70,32 +61,27 @@ button:hover {
   border-radius: 4px;
 }
 
-/* Container for content centering */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem;
 }
 
-/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #1e293b;
   margin-bottom: 0.5em;
 }
 
-/* List styling */
 ul, ol {
   padding-left: 1.5em;
 }
 
-/* Image responsive styling */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* Card component styling */
 .card {
   background: #fff;
   border-radius: 8px;
@@ -119,137 +105,7 @@ img {
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
-  .card {
-    padding: 1rem;
-  }
-}
-
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Base styles for HTML and Body */
-html, body {
-  height: 100%;
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  background: #f8f9fa;
-  color: #222;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Root element for React app */
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Anchor link styling */
-a {
-  color: #7c3aed;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-/* Anchor link hover effect */
-a:hover {
-  color: #5b21b6;
-  text-decoration: underline;
-}
-
-/* Base styles for form elements */
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: 1rem;
-  outline: none;
-}
-
-/* Button styling */
-button {
-  cursor: pointer;
-  background: #7c3aed;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5em 1.2em;
-  transition: background 0.2s;
-}
-
-/* Button hover effect */
-button:hover {
-  background: #5b21b6;
-}
-
-/* Custom scrollbar styling for Webkit browsers */
-::-webkit-scrollbar {
-  width: 8px;
-  background: #e5e7eb;
-}
-::-webkit-scrollbar-thumb {
-  background: #c7d2fe;
-  border-radius: 4px;
-}
-
-/* Container for content centering */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem;
-}
-
-/* Heading styles */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 0.5em;
-}
-
-/* List styling */
-ul, ol {
-  padding-left: 1.5em;
-}
-
-/* Image responsive styling */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Card component styling */
-.card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Utility classes */
-.text-center {
-  text-align: center;
-}
-.mt-2 { margin-top: 0.5rem; }
-.mt-4 { margin-top: 1rem; }
-.mb-2 { margin-bottom: 0.5rem; }
-.mb-4 { margin-bottom: 1rem; }
-.p-2 { padding: 0.5rem; }
-.p-4 { padding: 1rem; }
-.rounded { border-radius: 8px; }
-.shadow {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-/* Responsive adjustments for smaller screens */
+/* Responsive */
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
