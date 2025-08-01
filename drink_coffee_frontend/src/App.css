@@ -1,9 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* --- Base Application Layout & Structure --- */
-
-/* Styles for the main application container */
+/* App-like enhancements */
 .app-container {
   min-height: 100vh;
   display: flex;
@@ -11,7 +9,6 @@
   background: var(--color-background);
 }
 
-/* Styles for the main content area */
 .main-content {
   flex: 1;
   display: flex;
@@ -21,7 +18,6 @@
   padding: 2rem 1rem 3rem 1rem;
 }
 
-/* Styles for general card components */
 .card {
   background: var(--color-card);
   color: var(--color-card-foreground);
@@ -33,15 +29,10 @@
   max-width: 420px;
   transition: box-shadow 0.2s;
 }
-
-/* Hover effect for cards */
 .card:hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
 }
 
-/* --- Navbar Styling --- */
-
-/* Styles for the application navigation bar */
 .app-navbar {
   width: 100%;
   background: var(--color-sidebar);
@@ -56,29 +47,22 @@
   z-index: 10;
 }
 
-/* Logo styling within the navbar */
 .app-navbar .logo {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 
-/* Navigation links within the navbar */
 .app-navbar nav a {
   margin-left: 1.5rem;
   color: var(--color-sidebar-primary);
   font-weight: 500;
   transition: color 0.2s;
 }
-
-/* Hover effect for navbar links */
 .app-navbar nav a:hover {
   color: var(--color-sidebar-accent);
 }
 
-/* --- Footer Styling --- */
-
-/* Styles for the application footer */
 .app-footer {
   width: 100%;
   background: var(--color-sidebar);
@@ -89,9 +73,7 @@
   box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
 }
 
-/* --- Interactive Elements --- */
-
-/* Stylish button base styles */
+/* Stylish buttons */
 .btn {
   display: inline-block;
   background: var(--color-primary);
@@ -105,29 +87,21 @@
   transition: background 0.2s, box-shadow 0.2s;
   cursor: pointer;
 }
-
-/* Hover and focus effects for buttons */
 .btn:hover, .btn:focus {
   background: var(--color-secondary);
   color: var(--color-secondary-foreground);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-
-/* Accent button variant */
 .btn-accent {
   background: var(--color-accent);
   color: var(--color-accent-foreground);
 }
-
-/* Danger button variant */
 .btn-danger {
   background: var(--color-destructive);
   color: #fff;
 }
 
-/* --- Form Inputs --- */
-
-/* Styles for various input fields */
+/* Inputs */
 .input, input, select, textarea {
   background: var(--color-input);
   color: var(--color-foreground);
@@ -139,60 +113,40 @@
   transition: border 0.2s, box-shadow 0.2s;
   outline: none;
 }
-
-/* Focus effect for input fields */
 .input:focus, input:focus, select:focus, textarea:focus {
   border-color: var(--color-ring);
   box-shadow: 0 0 0 2px var(--color-ring);
 }
 
-/* --- Utility Classes --- */
-
-/* Flexbox utilities */
+/* Utility classes */
 .flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* Gap utilities */
 .gap-2 { gap: 0.5rem; }
 .gap-4 { gap: 1rem; }
-
-/* Border radius utility */
 .rounded { border-radius: var(--radius-lg); }
-
-/* Shadow utility */
 .shadow {
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-
-/* Margin utilities */
 .mt-2 { margin-top: 0.5rem; }
 .mt-4 { margin-top: 1rem; }
 .mb-2 { margin-bottom: 0.5rem; }
 .mb-4 { margin-bottom: 1rem; }
-
-/* Padding utilities */
 .p-2 { padding: 0.5rem; }
 .p-4 { padding: 1rem; }
 
-/* --- Animations --- */
-
-/* Fade-in animation */
+/* Animations */
 .fade-in {
   animation: fadeIn 0.7s cubic-bezier(.4,0,.2,1);
 }
-
-/* Keyframes for the fade-in animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: none; }
 }
 
-/* --- Responsive Adjustments --- */
-
-/* Media query for smaller screens (max-width: 600px) */
+/* Responsive tweaks */
 @media (max-width: 600px) {
   .card {
     padding: 1rem 0.5rem;
@@ -207,9 +161,7 @@
   }
 }
 
-/* --- CSS Variables (Design Tokens) --- */
 
-/* Root variables for light theme */
 :root {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -249,7 +201,6 @@
   --app-max-width: 480px;
 }
 
-/* Default color values for the light theme */
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -285,7 +236,6 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-/* Dark theme variables */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -319,8 +269,6 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
-
-/* --- Base Layer Styles --- */
 
 @layer base {
   * {
