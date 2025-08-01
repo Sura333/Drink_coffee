@@ -31,17 +31,36 @@ const Login = () => {
 
     const result = await login(formData.username, formData.password);
 
-    if (result.success) {
-      navigate('/');
-    } else {
-      setError(result.error);
-    }
+       if (result.success) {
+         navigate('/coffee');
+       } else {
+         setError(result.error);
+       }
 
     setLoading(false);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-amber-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="main-content flex-center" style={{ minHeight: '100vh', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: 'var(--color-background)' }}>
+        <span
+          className="logo"
+          style={{
+            fontSize: '3.2rem',
+            fontWeight: 900,
+            letterSpacing: '0.06em',
+            color: 'var(--color-primary)',
+            textShadow: '0 4px 24px rgba(124,60,237,0.10), 0 1.5px 4px rgba(0,0,0,0.08)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5em',
+            fontFamily: '"Segoe UI", "Inter", Arial, sans-serif',
+            margin: '2.5rem 0 1.5rem 0',
+            lineHeight: 1.1
+          }}
+        >
+          <span style={{ fontSize: '2.2em', marginRight: '0.2em' }}>☕</span>
+          Drink <span style={{ color: 'var(--color-accent)', marginLeft: '0.2em' }}>Coffee</span>
+        </span>
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
@@ -52,11 +71,11 @@ const Login = () => {
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
-            {error && (
-              <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded">
-                {error}
-              </div>
-            )}
+               {error && (
+                 <div className="bg-red-50 border border-red-200 px-4 py-3 rounded" style={{ color: '#dc2626', fontWeight: 600, fontSize: '1rem', textAlign: 'center' }}>
+                   {error}
+                 </div>
+               )}
 
             <div>
               <Label htmlFor="username">Username</Label>
